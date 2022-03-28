@@ -26,7 +26,7 @@ class UnbordingContent {
 List<UnbordingContent> contents = [
   UnbordingContent(
       title: 'PUBLIC DETAILS',
-      image: 'images/quality.svg',
+      image: 'images/publicDetails.svg',
       discription: "containing one text field "),
   UnbordingContent(
       title: 'SECURITY INFORMATION',
@@ -36,12 +36,12 @@ List<UnbordingContent> contents = [
           "to be able to another account "),
   UnbordingContent(
       title: 'PERSONAL DETAILS',
-      image: 'images/reward.svg',
+      image: 'images/personalDetails.svg',
       discription:
           "containing firstName,lastName, father's Name, DOB, PlaceOB "),
   UnbordingContent(
       title: 'SOCIAL MEDIA ACCOUNT',
-      image: 'images/quality.svg',
+      image: 'images/socialMedia.svg',
       discription:
           "message and a button to add account, uppon selecting button with a list and two fields to add"
           "userName for account and URL for account "),
@@ -51,15 +51,15 @@ List<UnbordingContent> contents = [
       discription: "one button with five options and a field "),
   UnbordingContent(
       title: 'SOCIETAL ACCESS',
-      image: 'images/reward.svg',
+      image: 'images/societalAccess.svg',
       discription: "... "),
   UnbordingContent(
       title: 'POLITICAL ACCESS',
-      image: 'images/quality.svg',
+      image: 'images/politicalAccess.svg',
       discription: ".... "),
   UnbordingContent(
       title: 'RELIGIOUS ACCESS',
-      image: 'images/delevery.svg',
+      image: 'images/religiousAccess.svg',
       discription: ".... "),
   UnbordingContent(
       title: 'MILITARY ACCESS',
