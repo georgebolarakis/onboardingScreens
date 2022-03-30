@@ -15,6 +15,8 @@ import 'home.dart';
 // }
 
 class Onbording extends StatefulWidget {
+  Onbording(BuildContext ctx);
+
   @override
   _OnbordingState createState() => _OnbordingState();
 }
