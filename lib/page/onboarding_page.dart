@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:onboarding_screen/widgets/secondTest.dart';
 
 import '../widgets/testWidget.dart';
 import 'content_model.dart';
@@ -78,8 +79,9 @@ class _OnbordingState extends State<Onbording> {
                     children: [
                       SvgPicture.asset(
                         contents[i].image,
-                        height: 100,
+                        height: 150,
                       ),
+                      SizedBox(height: 20),
                       Text(
                         contents[i].title,
                         style: TextStyle(
@@ -92,7 +94,7 @@ class _OnbordingState extends State<Onbording> {
                         contents[i].discription,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 10,
                           color: Colors.grey,
                         ),
                       ),
@@ -118,9 +120,8 @@ class _OnbordingState extends State<Onbording> {
                             // height: double.infinity,
                             // width: double.infinity,
                             //we are expecting the child to be a type widget
-                            child: TestWidget(),
+                            child: SecondTest(contents[i].content),
                           );
-                          buildContainer(TestWidget());
                         },
                       ),
                     ],
