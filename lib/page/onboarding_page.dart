@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../widgets/testWidget.dart';
 import 'content_model.dart';
 import 'home.dart';
 // import 'package:introduction_screen/intorduction_screen.dart';
@@ -37,6 +38,25 @@ class _OnbordingState extends State<Onbording> {
     super.dispose();
   }
 
+  Widget buildContainer(Widget child) {
+    return Container(
+      //we are adding the decoration for a user to identify that there is a listview
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Color.fromARGB(255, 228, 10, 10)),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      //margin inside the container
+      margin: EdgeInsets.all(10),
+      //padding  inside the container
+      padding: EdgeInsets.all(10),
+      height: double.infinity,
+      width: double.infinity,
+      //we are expecting the child to be a type widget
+      child: child,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +78,7 @@ class _OnbordingState extends State<Onbording> {
                     children: [
                       SvgPicture.asset(
                         contents[i].image,
-                        height: 300,
+                        height: 100,
                       ),
                       Text(
                         contents[i].title,
@@ -75,7 +95,34 @@ class _OnbordingState extends State<Onbording> {
                           fontSize: 15,
                           color: Colors.grey,
                         ),
-                      )
+                      ),
+                      LayoutBuilder(
+                        builder: (context, constraints) {
+                          return Container(
+                            // height: constraints.maxHeight * 0.2,
+                            // width: 10,
+                            height: 300,
+                            //we are adding the decoration for a user to identify that there is a listview
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(
+                                  //color: Theme.of(context).primaryColor,
+
+                                  color: Color.fromARGB(255, 0, 6, 8)),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            //margin inside the container
+                            // margin: EdgeInsets.all(10),
+                            // //padding  inside the container
+                            // padding: EdgeInsets.all(10),
+                            // height: double.infinity,
+                            // width: double.infinity,
+                            //we are expecting the child to be a type widget
+                            child: TestWidget(),
+                          );
+                          buildContainer(TestWidget());
+                        },
+                      ),
                     ],
                   ),
                 );

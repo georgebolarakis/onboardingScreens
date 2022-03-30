@@ -15,18 +15,19 @@
 //OVERIVIEW
 //The models for all the above exist, I need to make the UI and connect all the dots together
 import 'package:flutter/material.dart';
+import 'package:onboarding_screen/widgets/testWidget.dart';
 
 class UnbordingContent {
   String image;
   String title;
   String discription;
-  //Widget content;
+  Widget content;
 
   UnbordingContent({
     required this.image,
     required this.title,
     required this.discription,
-    //required this.content,
+    required this.content,
   });
 }
 
@@ -35,7 +36,7 @@ List<UnbordingContent> contents = [
     title: 'PUBLIC DETAILS',
     image: 'images/publicDetails.svg',
     discription: "containing one text field ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'SECURITY INFORMATION',
@@ -43,13 +44,13 @@ List<UnbordingContent> contents = [
     discription:
         "containing Phone Number TF, Button for picture next to login image, message, and another button"
         "to be able to another account ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'PERSONAL DETAILS',
     image: 'images/pesonalDetails.svg',
     discription: "containing firstName,lastName, father's Name, DOB, PlaceOB ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'SOCIAL MEDIA ACCOUNT',
@@ -57,48 +58,48 @@ List<UnbordingContent> contents = [
     discription:
         "message and a button to add account, uppon selecting button with a list and two fields to add"
         "userName for account and URL for account ",
-    // content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'MEDIA ACCESS',
     image: 'images/mediaAccess.svg',
     discription: "one button with five options and a field ",
-    // content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'SOCIETAL ACCESS',
     image: 'images/societalAccess.svg',
     discription: "... ",
-    // content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'POLITICAL ACCESS',
     image: 'images/politicalAccess.svg',
     discription: ".... ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'RELIGIOUS ACCESS',
     image: 'images/religiousAccess.svg',
     discription: ".... ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'MILITARY ACCESS',
     image: 'images/military.svg',
     discription: ".... ",
-    // content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'ECONOMIC ACCESS',
     image: 'images/economicAccess.svg',
     discription: "... ",
-    //content: null,
+    content: TestWidget(),
   ),
   UnbordingContent(
     title: 'OVERVIEW',
     image: 'images/overview.svg',
     discription: ".Last Page",
-    //content: null,
+    content: TestWidget(),
   ),
 ];
